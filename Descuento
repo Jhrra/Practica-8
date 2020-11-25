@@ -27,7 +27,7 @@ int main (){
 	break;
 	case 4:
 		printf("Tu bola fue blanca, no aplica descuento\n");		
-		printf("El monto total es %f ",u);
+		printf("El monto total es %d ",u);
 	break;
 	}
     return 0;
