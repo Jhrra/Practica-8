@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main (){
+	int a,u;
+    srand(time(NULL));
+    a=1+rand()%(5-1);
+    printf("\n\t Dame el monto total de la compra ");
+	scanf("%d",&u);    
+	printf("\n1. Verde 20%");
+	printf("\n2. Amarillo 25%");
+	printf("\n3. Negro 30%");
+	printf("\n4. Blanco No aplica descuento");
+	printf("\n\n\t Escogiendo tu bola al azar\n\n");	
+	switch (a){
+	case 1:
+		printf("Tu bola fue verde\n");
+		printf("El monto total es %.3f$ ",0.8*u);
+	break;
+	case 2:
+		printf("Tu bola fue amarilla\n");		
+		printf("El monto total es %.3f$ ",0.75*u);
+	break;
+	case 3:
+		printf("Tu bola fue negra\n");		
+		printf("El monto total es %.3f$ ",0.70*u);
+	break;
+	case 4:
+		printf("Tu bola fue blanca, no aplica descuento\n");		
+		printf("El monto total es %f ",u);
+	break;
+	}
+    return 0;
+	}
