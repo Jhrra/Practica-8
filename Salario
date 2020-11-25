@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+  int a,b,c;
+	printf("\nDame las horas que se trabajo: ");
+	scanf("%d",&a);
+	printf("\nDame la paga por hora: ");
+	scanf("%d",&b);
+	c=a;
+	if 	(a<40 or a==40){
+	  printf("\n El sueldo semanal es %d",a*b);
+	}else{
+		a=48-a;
+        if (a>0 or a==0){
+        	a=8-a;
+    	  printf("\n El sueldo semanal es %d",(2*a*b)+40*b);
+		}
+	}
+	c=c-48;
+	printf("\n El sueldo semanal es %d",(3*c*b)+(16*b)+(40*b));
+ return 0;		
+}	
