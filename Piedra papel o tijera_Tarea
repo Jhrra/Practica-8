@@ -1,0 +1,144 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main (){
+	int a,u;
+    srand(time(NULL));
+    a=1+rand()%(6-1);
+    printf("\n\t\t\tPiedra papel o tijera?...");
+	printf("\n\t1. Piedra");
+	printf("\n\t2. Papel");
+	printf("\n\t3. Tijera");
+	printf("\n\t4. Lagarto");
+	printf("\n\t5. Spock\n");
+	scanf("%d",&u);
+	switch (u){
+	case 1:
+		if(a==1){
+		printf("La maquina igual selecciono piedra, empate ");
+	    }
+		else{
+			if(a==2){
+		     printf("La maquina selecciono papel, por lo tanto papel cubre piedra, maquina gana ");
+			}
+		  else{
+			if(a==3){
+			 printf("La maquina selecciono tijera, por lo tanto pidra rompe tijera, usuario gana ");
+			}
+		   else{        
+			 if(a==4){
+		       printf("La maquina selecciono lagarto, por lo tanto piedra aplasta lagarto, usuario gana ");
+			 }
+		     else {
+			    if(a==5){
+		       printf("La maquina selecciono Spock, por lo tanto Spock vaporiza piedra, maquina gana ");
+			    }		
+		     }
+		   }
+		  }
+	   }
+	break;
+	case 2:
+		if(a==2){
+		  printf("La maquina igual selecciono papel, empate ");
+    }
+		else{
+			if(a==1){
+		    printf("La maquina selecciono piedra, por lo tanto papel cubre piedra, usuario gana ");
+			}
+	      else {
+			    if(a==3){
+		   	   printf("La maquina selecciono tijera, por lo tanto tijera corta papel, maquina gana ");
+		      }
+		      else {        
+			     if(a==4){
+		        printf("La maquina selecciono lagarto, por lo tanto lagarto devora papel, maquina gana ");
+			     }
+	        	else {
+			       if(a==5){
+		           printf("La maquina selecciono Spock, por lo tanto papel desautoriza a Spock, usuario gana ");
+			       }		
+		 	      }
+			    } 
+		   }
+		}
+			
+	break;
+	case 3:
+		if(a==3){
+		printf("La maquina igual selecciono tijera, empate ");
+		}
+		else{
+			if(a==1){
+		    printf("La maquina selecciono piedra, por lo tanto piedra rompe tijera, maquina gana ");
+			}
+		    else {
+			   if(a==2){
+			    printf("La maquina selecciono papel,por lo tanto tijera corta papel, usuario gana "); 
+			   }
+		    else {        
+			   if(a==4){
+		        printf("La maquina selecciono lagarto, por lo tanto tijera decapita lagarto, usuario gana ");
+			   }
+		      else {
+			     if(a==5){
+		         printf("La maquina selecciono Spock, por lo tanto Spock rompe tijera, maquina gana ");
+				   }		
+			    }
+			  }
+			}
+		}			
+	break;
+	case 4:
+		if(a==4){
+		printf("La maquina igual selecciono lagarto, empate ");
+		 }
+		   else{
+		    	if(a==1){
+		       printf("La maquina selecciono piedra, por lo tanto piedra aplasta lagarto, maquina gana ");
+		    	}
+		     else {
+			    if(a==2){
+			     printf("La maquina selecciono papel,por lo tanto lagarto devora papel, usuario gana ");
+				  }
+		       else {        
+			      if(a==3){
+		         printf("La maquina selecciono tijera, por lo tanto tijera decapita lagarto, maquina gana ");
+				    }
+		           else {
+			           if(a==5){
+		              printf("La maquina selecciono Spock, por lo tanto lagasrto envenena a Spock, usuario gana ");
+					       }
+			         }
+			      }
+			    } 
+			  }			
+	break;		
+	case 5:
+		if(a==5){
+		 printf("La maquina igual selecciono Spock, empate ");
+		}
+		else{
+		  if(a==1){
+		     printf("La maquina selecciono piedra, por lo tanto Spock vaporiza piedra, usuario gana ");
+		  }
+		  else {
+			 if(a==2){
+			  printf("La maquina selecciono papel,por lo tanto papel desautoriza a Spock, maquina gana ");
+			  }
+		    else {        
+			    if(a==4){
+		       printf("La maquina selecciono lagarto, por lo tanto lagarto envenena a Spock, maquina gana ");
+			    }
+		      else {
+			      if(a==3){
+		         printf("La maquina selecciono piedra, por lo tanto Spock vaporiza piedra, usuario gana ");
+				    }		
+			     }
+			   }
+		   }
+     }
+	break;	
+	}
+    return 0;
+}
