@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+	float a,b,c,d,x1,x2;
+	printf("Dame el coeficiente de a ");
+	scanf("%f",&a);
+	printf("Dame el coeficiente de b ");
+	scanf("%f",&b);
+	printf("Dame el coeficiente de c ");
+	scanf("%f",&c);
+	d=(b*b-4*a*c);
+    d=sqrtf(d);
+	x1=-b+d/2*a;
+	x2=-b-d/2*a;
+	printf("Las raices son: x1= %f y x2= %f\n",x1,x2);
+	return 0;
+}
